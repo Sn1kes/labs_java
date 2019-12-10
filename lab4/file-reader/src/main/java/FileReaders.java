@@ -16,7 +16,7 @@ public class FileReaders {
     public static String readWholeFile(String fileName) {
         String s = null;
         try {
-            s = new String(Files.readAllBytes(Paths.get("src/test/resources/" + fileName)));
+            s = new String(String.join("\n", Files.readAllLines(Paths.get("src/test/resources/" + fileName))));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -14,16 +14,19 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-
     <modules>
-        <module>lab4/file-reader</module>
-        <module>lab4/file-stats</module>
-        <module>lab5_list/linked-list</module>
-        <module>lab5_list/linked-queue</module>
-        <module>lab5_list/stack</module>
         <module>lab1_square</module>
         <module>lab2_reflection</module>
         <module>lab3_functional</module>
+        <module>lab4</module>
+        <module>lab5_list</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+    </dependencies>
 </project>
